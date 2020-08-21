@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Styling Demo</title>
+  <style>
+    body { margin-bottom: 500px;}
+  </style>
+</head>
+<body>
+  <h2>Font Size</h2>
+  <h4>Absolute Units</h4>
+  <p style="font-size: 32px">1 px is 1/96th of an inch, not the pixel of the screen on the viewing device</p>
+  <p style="font-size: 1cm">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+  <h4>Relative Units</h4>
+  <div style="font-size: 50px">
+    <p style="font-size: 0.5em; border: solid black 0.5em;">
+      em is relative to the font-size of the parent element if we're using it for font properties,
+      but it's relative to the font-size of the element itself if being used for anything that's not font related
+      This element's font-size is 0.5em x 50px = 25px large
+      The border is 0.5em x the element's font size (25px) = 12.5px 
+    </p>
+  </div>
+  <p style="font-size: 1.5rem;">
+    If the root element's font-size is 16px, then 1.5rem is 24px
+    Measuring everything off of the same unit, such as when using rem's 
+    might be easier in some cases
+  </p>
+
+  <h2>Color Demo</h2>
+  <p style="color: magenta;">Predefined color names</p>
+  <p style="color: #10AFFF">Hex color code</p>
+  <p style="color: rgb(150, 255, 50)">rgb value</p>
+  <p style="color: rgba(150, 255, 50, 0.5)">rgba value, alpha ranges from 0 to 1 (transparancy</p>
+
+  <h2>Text Decoration</h2>
+  <p style="text-decoration: underline;">Underline</p>
+  <p style="text-decoration: overline;">Overline</p>
+  <p style="text-decoration: line-through;">Line-through</p>
+
+  <h2>Width Demo</h2>
+  <div style="width: 200px; background-color: mediumpurple;">
+    200px wide
+    width only applies to the element, not the padding or margins
+  </div>
+  <div style="border: solid black 2px; width: 350px;">
+    <div style="width: 50%; background-color: rgb(154, 138, 39);">
+      Percentage Units are relative to the parent element of the same property
+      50% x 350px = 175px
+    </div>
+  </div>
+  <h2>Height Demo</h2>
+  <div style="height: 20px; background-color:mediumturquoise;">20px high</div>
+  <div style="border: solid black 2px; height: 100px;">
+    <div style="height: 50%; background-color: rgb(154, 138, 39);">
+      Percentage Units are relative to the parent element of the same property
+      50% x 100px = 50px
+    </div>
+  </div>
+  <div style="height: 50vh; background-color: mediumvioletred;">
+    vh is relative to the viewport's height, range ranges from 0-100 as apercentage
+  </div>
+  <div style="height: 3em; background-color: lightseagreen; font-size: 10px;">
+    em height is relative to the font-size of the element since height is not a font property
+    3em x 10px = 30px
+  </div>
+
+  <h2>text-Align</h2>
+  <div style="border: solid black 2px;">
+    <p style="text-align: left;">Left-aligned</p>
+    <p style="text-align: right;">Right-aligned</p>
+    <p style="text-align: center;">Centered Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro voluptas at possimus illum dolorem, ducimus doloribus et! Tempora alias modi tempore corrupti ullam consectetur, provident vel nihil vero, velit iure assumenda. Cum rerum similique reiciendis. Ea, et? Labore iure tempore eveniet aut non maiores voluptatibus repellat dolorum vero, facilis quas!</p>
+    <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor magni soluta nostrum recusandae quae aperiam sequi, nobis dignissimos quas. Ex? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea omnis quia iure totam minima exercitationem officiis aspernatur praesentium iste harum.</p>
+  </div>
+
+  <h2>Opacity/Transparency Demo</h2>
+  <p>Opacity applies to the whole element (background and text</p>
+  <div style="opacity: 0.5; background-color: darkolivegreen;">50% Opacity</div>
+  <div style="opacity: 1; background-color: darkolivegreen;">100% Opacity</div>
+
+  <h2>Background</h2>
+  <div style="background-color: deeppink;">Background Color</div>
+  <div style="background-image: url('./sunset.jpg'); height: 100vh; color: white;">Background Image Default</div>
+  <div style="background-image: url('./sunset.jpg'); height: 100vh; color: white; background-repeat: no-repeat;">Background Image No repeat</div>
+  <div style="background-image: url('./sunset.jpg'); height: 100vh; color: white; background-size: 100%;">Background Image</div>
+</body>
+</html>

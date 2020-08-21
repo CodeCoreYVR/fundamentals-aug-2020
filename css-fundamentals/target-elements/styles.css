@@ -1,0 +1,30 @@
+body { margin-bottom: 500px;}
+
+#alignment-parent > p.highlight { background-color: yellow; }
+
+/* This does not get applied because it's not specific enough / cascading */
+.highlight { background-color: lime; }
+
+/* !important overrides other more specific selectors, even inline */
+.highlight { background-color: orange !important; }
+
+h2 { color: blue;}
+
+#alignment-parent { background-color: lightsteelblue; }
+
+div.olive { background-color: darkolivegreen; }
+
+.height-parent {
+  /* padding doesn't overlap, while margin does */
+  padding: 10px; /* all four sides */
+  margin: 15px 30px; /* top/bottom-15 left/right-30
+  padding: 25px 12px 30px; top-25 left/right-12 bottom-30
+  margin: 25px 12px 30px 50px; top right bottom left
+
+  Add to one side:
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  */
+}
