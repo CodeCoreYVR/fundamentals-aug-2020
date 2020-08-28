@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Block</title>
+  <style>
+    /* <a> default display is inline */
+    a {
+      display: inline;
+      color: red;
+
+      /* 
+        height and width don't affect inline elements, 
+        they only take up the height and width 
+        that's needed for the content
+      */
+      height: 10000px;
+      width: 10000px;
+
+      /* top and bottom margin/padding aren't affected but left and right are */
+      margin-top: 300px;
+      margin-left: 30px;
+      padding-right: 30px;
+      padding-bottom: 300px;
+    }
+    /* <p> by default are set to display: block and will start on a new line */
+    p {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. <a>THIS IS AN INLINE LINK</a>Dolorem, quod natus? Praesentium perferendis sequi, adipisci explicabo repudiandae aspernatur aperiam et.
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, quod natus? Praesentium perferendis sequi, adipisci explicabo repudiandae aspernatur aperiam et.
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, quod natus? Praesentium perferendis sequi, adipisci explicabo repudiandae aspernatur aperiam et.
+  </p>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Images and Paragraphs</title>
+  <style>
+    p {
+      /* 
+        The paragraph is actually underneath the images 
+        but the words wrap around
+      */
+      background-color: lightsalmon;
+    }
+
+    /* By default images are inline */
+    img {
+      opacity: 0.5;
+    }
+
+    img.doggo {
+      float: left;
+      margin-right: 15px;
+    }
+
+    img.bunny {
+      float: right;
+    }
+  </style>
+</head>
+<body>
+  <p>
+    <img class="doggo" src="./doggo.jpeg" alt="doggo"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident aliquam beatae, doloremque nemo facere odio fugit nesciunt odit explicabo aut quam, enim debitis quos maiores quidem. Minima dolorum dolor harum corporis, veniam nam incidunt quidem ipsa numquam, dolores repellat architecto eum voluptas quia voluptate maxime dolore nobis fugit. Culpa nihil voluptatem labore minus exercitationem odit, quibusdam, vero ut commodi quaerat blanditiis laborum nulla numquam voluptatibus molestiae velit officiis quos sunt natus? Id commodi libero inventore soluta, nostrum eveniet nihil error ratione asperiores tempore ipsam nam dolorem rerum totam ipsum molestiae. Fugiat corrupti qui quaerat quos temporibus aspernatur nobis nihil animi.
+    <img class="bunny" src="./bunny.jpeg" alt="bunny">
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias vel dicta pariatur culpa adipisci blanditiis saepe repudiandae, officia ut nostrum esse neque reprehenderit distinctio quisquam sunt harum iure odit, nam quos totam. Odit nostrum non eveniet impedit earum vero odio distinctio fuga nemo optio commodi dolorem quasi, officiis quae quod sint vel, iusto dicta harum pariatur adipisci necessitatibus sapiente. Ut iste tenetur ea hic tempora assumenda vitae, eligendi maxime incidunt dolorum sint, cupiditate suscipit amet exercitationem officia eius molestias facere.
+  </p>
+</body>
+</html>

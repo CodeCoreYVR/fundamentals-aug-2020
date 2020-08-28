@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Queries</title>
+  <style>
+    .box {
+      height: 500px;
+      width: 500px;
+    }
+    @media (max-width: 1080px) {
+      .box {
+        background-color: red;
+      }
+    }
+    /* 
+      You can add multiple conditions with "and"
+      green will always override this rule because of 
+      cascading and they the same specificity which is based
+      off of the selector, not the condition
+    */
+    @media (max-width: 1080px) and (min-width: 960px) {
+      .box {
+        background-color: blue;
+      }
+    }
+    @media (min-width: 960px) {
+      .box {
+        background-color: green;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>
