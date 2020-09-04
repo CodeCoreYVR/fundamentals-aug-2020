@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Layout</title>
+  <style>
+    * { color: white; }
+    header {
+      display: flex;
+
+      /* 
+        In a flex container, the main axis is the x-axis and the cross axis
+        is the y-axis, but you can change it with flex-direction
+        By default, the flex-direction is row (left to right) 
+        All children will line up along the main axis
+      */
+      /* flex-direction: row-reverse; right to left  */
+      /* flex-direction: column; top to bottom */
+      /* flex-direction: column-reverse; bottom to top */
+      flex-direction: row; 
+
+      /* align flex-items along the main axis */
+      justify-content: space-between;
+      /* align-items: center; align along cross-axis */
+    }
+
+    .nav { width: 40%; }
+
+    .logo, .nav {
+      background-color: forestgreen;
+    }
+
+    main {
+      background-color: forestgreen;
+      height: 50vh;
+      margin: 2% 0;
+    }
+
+    .large { 
+      background-color: forestgreen;
+      /* flex property will take up the space needed and we can add margins as well*/
+      flex: 3;
+      /* width: 50vw; */
+      height: 15vw;
+    }
+
+    .small {
+      background-color: forestgreen;
+      flex: 1;
+      /* width: 10vw; */
+      height: 15vw;
+      margin-left: 2%;
+    }
+
+    .flex-row {
+      display: flex;
+      margin: 2% 0;
+      justify-content: space-between;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Logo</div>
+    <div class="nav">Nav Menu</div>
+  </header>
+
+  <main>Main</main>
+  
+  <div class="flex-row">
+    <div class="large">Large Box</div>
+    <div class="small">Small Box</div>
+    <div class="small">Small Box</div>
+  </div>
+  <div class="flex-row">
+    <div class="large">Large Box</div>
+    <div class="small">Small Box</div>
+    <div class="small">Small Box</div>
+  </div>
+</body>
+</html>
