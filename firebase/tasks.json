@@ -1,0 +1,12 @@
+{
+  "tasks": {
+    "1": {
+      "isComplete": false,
+      "name": "Learn firebase"
+    },
+    "2": {
+      "isComplete": true,
+      "name": "Eat breakfast"
+    }
+  }
+}
